@@ -10,4 +10,4 @@ After that, we generate a patterned gif. I actually don't how this part works. I
 
 ## Pattern examples
 
-[Boredom.gif]("Boredom.gif")
+![screen](Boredom.gif "Boredom")
