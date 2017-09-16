@@ -2,9 +2,9 @@ from PIL import Image, ImageFilter
 from io import BytesIO
 from colorthief import ColorThief
 
-import itunes
+import itunes # pip install pyitunes
 import requests
-import applescript
+import applescript # pip install py-applescript
 import json
 
 # TODO: Link up to arduino or internet connected lightbulbs. you know the rest
@@ -76,5 +76,8 @@ def get_color_palette_from_cover():
     palette = color_thief.get_palette(5)
     print("Dominant Color: {}".format(dominant_color))
     print("Color Palette: {}".format(palette))
+
+def mess_with_touch_bar(palette):
+    pass
 
 get_currently_playing_song()
