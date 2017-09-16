@@ -10,10 +10,22 @@ After that, we generate a patterned gif. I actually don't how this part works. I
 
 I curerntly have the DPI of each GIF set to 300. Obviously this results in huge GIF files but feel free to change it to your liking. Just find and search for "dpi" and change the values.
 
+Processing time might take a while so give it some time.
+
+## How to run
+
+**Open Spotify and play something.**
+**You need Python 3 and PIP**. You can figure out how to install those on your own.
+``` shell
+git clone https://github.com/fadelakin/slide.git
+cd slide
+pip install matplotlib Pillow scipy pyitunes pyobjc colorthief py-applescript imageio
+python track.py
+```
+
 ## Pattern examples
 
 XO TOUR Llif3 by Lil Uzi Vert
-
 ![screen](XO%20TOUR%20Llif3.gif "XO TOUR Llif3")
 
 Signs by Drake
@@ -27,6 +39,9 @@ The Good Life by Kanye West
 
 Magnolia by Playboi Carti
 ![screen](Magnolia.gif "Magnolia")
+
+El Ratico by Juanes
+![screen](El%20Ratico.gif "El Ratico")
 
 ### TODO:
 - Since we have the hex codes, I want to connect to the Hue API and have fun with that.
