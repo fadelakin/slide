@@ -14,7 +14,7 @@ I curerntly have the DPI of each GIF set to 300. Obviously this results in huge 
 
 XO TOUR Llif3 by Lil Uzi Vert
 
-![screen](XO\ TOUR\ Llif3.gif "XO TOUR Llif3")
+![screen](XO%20TOUR%20Llif3.gif "XO TOUR Llif3")
 
 Signs by Drake
 ![screen](Signs.gif "Signs")
@@ -23,7 +23,7 @@ Crazy by Thief
 ![screen](Crazy.gif "Crazy")
 
 The Good Life by Kanye West
-![screen](The\ Good\ Life.gif "Good Life")
+![screen](The%20Good%20Life.gif "Good Life")
 
 Magnolia by Playboi Carti
 ![screen](Magnolia.gif "Magnolia")
