@@ -25,6 +25,9 @@ python track.py
 
 ## Pattern examples
 
+Slide by Calvin Harris, Frank Ocean, Migos
+![screen](Slide.gif "Slide")
+
 XO TOUR Llif3 by Lil Uzi Vert
 ![screen](XO%20TOUR%20Llif3.gif "XO TOUR Llif3")
 
