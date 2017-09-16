@@ -10,4 +10,11 @@ After that, we generate a patterned gif. I actually don't how this part works. I
 
 ## Pattern examples
 
-![screen](Boredom.gif "Boredom")
+XO TOUR Llif3 by Lil Uzi Vert
+![screen](XO TOUR Llif3.gif "XO TOUR Llif3")
+
+Signs by Drake
+![screen](Signs.gif "Signs")
+
+Crazy by Thief
+![screen](Crazy.gif "Crazy")

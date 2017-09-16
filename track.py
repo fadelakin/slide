@@ -207,7 +207,7 @@ def starFlex(c1, c2, c3, c4, c5, tag):
             sub1.add_artist(c)
 
         savename = str('temp' + repr(x) + '.png')
-        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=50)
+        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=300)
         plt.clf()
 
     images = [] #  Turn a list of images into a GIF using ImageIO
@@ -297,7 +297,7 @@ def boxSlide(c1, c2, c3, c4, c5, tag):
                     ish[n][1]+w+(w/float(2))-f*1.5, e=e1[eno], c=cTop[count+1])
                 addShape(pts3, 120)
         savename = str('temp' + repr(x) + '.png')
-        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=50)
+        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=300)
         plt.clf()
 
     images = [] #  Turn a list of images into a GIF using ImageIO
@@ -361,7 +361,7 @@ def circleSize(c1, c2, c3, c4, c5, tag):
                     fc=c3, alpha=1, ec='none'))
                 count = count + 2
         savename = str('temp' + repr(x) + '.png')
-        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=50)
+        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=300)
         plt.clf()
 
     images = [] #  Turn a list of images into a GIF using ImageIO
@@ -418,7 +418,7 @@ def octagonFlex(c1, c2, c3, c4, c5, tag):
             addShape(pts2, 45, opacity[x])
 
         savename = str('temp' + repr(x) + '.png')
-        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=50)
+        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=300)
         plt.clf()
 
     images = [] #  Turn a list of images into a GIF using ImageIO
@@ -524,7 +524,7 @@ def pixelSlide(c1, c2, c3, c4, c5, tag):
                         addShape(pts, alphaParam=0.25)
 
         savename = str('temp' + repr(x) + '.png')
-        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=50)
+        fig.savefig(savename, bbox_inches='tight', pad_inches=0, dpi=300)
         plt.clf()
 
     images = [] #  Turn a list of images into a GIF using ImageIO
