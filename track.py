@@ -1,3 +1,5 @@
+# TODO: Link up to arduino or internet connected lightbulbs. you know the rest
+
 from PIL import Image, ImageFilter
 from io import BytesIO
 from colorthief import ColorThief
@@ -7,10 +9,8 @@ import requests
 import applescript # pip install py-applescript
 import json
 
-# TODO: Link up to arduino or internet connected lightbulbs. you know the rest
-
 def get_currently_playing_song():
-    tell_iTunes = applescript.AppleScript('''
+    tell_spotify = applescript.AppleScript('''
     on is_running(appName)
     	tell application "System Events" to (name of processes) contains appName
     end is_running
@@ -33,14 +33,17 @@ def get_currently_playing_song():
     end Playing
     ''')
 
-    output = tell_iTunes.call('Playing').split('%-%')
+    try:
+        output = tell_spotify.call('Playing').split('%-%')
 
-    song = dict()
-    song['artist'] = output[0]
-    song['name'] = output[1]
-    song['album'] = output[2]
-    song['player'] = output[3]
-    get_song_artwork(song)
+        song = dict()
+        song['artist'] = output[0]
+        song['name'] = output[1]
+        song['album'] = output[2]
+        song['player'] = output[3]
+        get_song_artwork(song)
+    except AttributeError:
+        print("Spotify is most likely not running. Start it and play some music then run the script again.")
 
 def get_song_artwork(song):
     try:
@@ -76,8 +79,10 @@ def get_color_palette_from_cover():
     palette = color_thief.get_palette(5)
     print("Dominant Color: {}".format(dominant_color))
     print("Color Palette: {}".format(palette))
+    mess_with_lights(palette)
 
-def mess_with_touch_bar(palette):
+def mess_with_lights(palette):
     pass
 
-get_currently_playing_song()
+if __name__ == '__main__':
+    get_currently_playing_song()
