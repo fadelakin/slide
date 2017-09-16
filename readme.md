@@ -23,7 +23,7 @@ Crazy by Thief
 ![screen](Crazy.gif "Crazy")
 
 The Good Life by Kanye West
-![screen](The%20Good%20Life.gif "Good Life")
+![screen](Good%20Life.gif "Good Life")
 
 Magnolia by Playboi Carti
 ![screen](Magnolia.gif "Magnolia")
