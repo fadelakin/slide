@@ -15,11 +15,11 @@ Processing time might take a while so give it some time.
 ## How to run
 
 **Open Spotify and play something.**
-**You need Python 3 and PIP**. You can figure out how to install those on your own.
+**You need Python 2.7 or Python 3 and PIP**. You can figure out how to install those on your own.
 ``` shell
 git clone https://github.com/fadelakin/slide.git
 cd slide
-pip install matplotlib Pillow scipy pyitunes pyobjc colorthief py-applescript imageio
+pip install -r requirements.txt
 python track.py
 ```
 
@@ -47,6 +47,5 @@ El Ratico by Juanes
 ![screen](El%20Ratico.gif "El Ratico")
 
 ### TODO:
-- Since we have the hex codes, I want to connect to the Hue API and have fun with that.
-- Twitter bot running the game and showing different patterns for each album art
-- Would be nice to not have to run the script everytime but w/e
+- refactor code
+- integrate spotify for automatic playing detection (would run as a daemon and need a way to reduce filesize)
